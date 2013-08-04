@@ -3,7 +3,7 @@ import pdb
 
 
 #Variable Intialization
-filename = "Data.txt"
+filename = "Data.csv"
 ITEMS = set()
 arffFilename = filename.split(".")[0] + ".arff"
 
