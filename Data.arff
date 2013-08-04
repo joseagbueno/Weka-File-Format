@@ -1,0 +1,21 @@
+@relation Weka
+
+
+@attribute Cheese {false,true}
+@attribute Shoes {false,true}
+@attribute Beef {false,true}
+@attribute Boots {false,true}
+@attribute Bread {false,true}
+@attribute Milk {false,true}
+@attribute Clothes {false,true}
+
+
+@data
+
+{ 2 true,4 true}
+{ 4 true,6 true}
+{ 4 true,6 true,5 true}
+{ 0 true,3 true}
+{ 2 true,4 true,0 true,1 true}
+{ 2 true,4 true,0 true,5 true}
+{ 4 true,5 true,6 true}
