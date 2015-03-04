@@ -27,13 +27,11 @@ myARFF.write('\n\n@data\n\n')
 myfile = csv.reader(open(filename,'rb'))
 
 for line in myfile:
-    tmp = []
     newLine = "{ "
-	#get the index first and sort them and then loop on sorted value to add true
-    for word in line:
-        tmp.append(ITEMS.index(word.strip()))
-    for i in sorted(tmp):
-        newLine += str(i) +" "+"true"+","
+
+    for word in line:         
+        newLine += str(str(ITEMS.index(word.strip()))+" "+"true"+",")
+
     writeLine = newLine[:-1]
     writeLine += "}\n"
     print writeLine
