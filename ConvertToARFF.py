@@ -32,7 +32,7 @@ for line in myfile:
 	#get the index first and sort them and then loop on sorted value to add true
     for word in line:
         tmp.append(ITEMS.index(word.strip()))
-    for i in sorted(tmp):
+    for i in sorted(list(set(tmp))):
         newLine += str(i) +" "+"true"+","
     writeLine = newLine[:-1]
     writeLine += "}\n"
